@@ -92,3 +92,6 @@ dist: clean ## builds source and wheel package
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+uninstall: clean  ## uninstall the package from active Python's site-packages
+	python -m pip uninstall {{ cookiecutter.project_slug }}
