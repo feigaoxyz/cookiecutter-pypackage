@@ -3,7 +3,7 @@
 {{ cookiecutter.project_name }}
 ===============================
 
-{% if is_open_source %}
+{% if is_open_source and cookiecutter.use_pypi == 'y' %}
 .. image:: https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg
         :target: https://pypi.python.org/pypi/{{ cookiecutter.project_slug }}
 
@@ -35,8 +35,8 @@ Features
 Credits
 ---------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+This package was created with Cookiecutter_ and the `feigaoxyz/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`feigaoxyz/cookiecutter-pypackage`: https://github.com/feigaoxyz/cookiecutter-pypackage
 

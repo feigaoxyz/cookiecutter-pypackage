@@ -14,7 +14,7 @@ Contents:
    readme
    installation
    usage
-   contributing
+   {% if cookiecutter.contributing_instruction == 'y' -%}contributing{% endif -%}
    {% if cookiecutter.create_author_file == 'y' -%}authors{% endif -%}
    history
 

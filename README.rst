@@ -26,7 +26,7 @@ Features
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 
 Build Status
--------------
+------------
 
 Linux:
 
