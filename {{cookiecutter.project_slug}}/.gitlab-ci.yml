@@ -1,0 +1,12 @@
+image: python:3.5
+
+pages:
+    stage: deploy
+    script:
+        - pip install -r requirements.txt
+        - pip install -r requirements_dev.txt
+        - make docs
+        - mv docs/_build/html public
+    artifacts:
+        paths:
+            - public
